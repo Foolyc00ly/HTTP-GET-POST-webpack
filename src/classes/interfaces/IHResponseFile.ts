@@ -1,0 +1,21 @@
+export interface IHResponseFile{
+    "asset_id": string,
+    "public_id":string,
+    "version": number,
+    "version_id": string,
+    "signature":string,
+    "width": 400,
+    "height": 400,
+    "format":string,
+    "resource_type":string,
+    "created_at":string,
+    "tags": [],
+    "bytes": 20541,
+    "type": string,
+    "etag": string,
+    "placeholder": false,
+    "url": RequestInfo,
+    "secure_url": RequestInfo,
+    "access_mode": string,
+    "original_filename": string
+}

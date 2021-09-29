@@ -7,7 +7,6 @@ const crearChistesHTML=()=>{
             <hr>
             <button  class="btn btn-primary">Otro Chiste</button>
             <ol class="mt-2 list-group">
-                
             </ol>
         </div>
     `;

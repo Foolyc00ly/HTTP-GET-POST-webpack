@@ -1,5 +1,7 @@
 import{IHResponse}from '../classes/interfaces/IHResponse'
+//Cloudinary
 const jokeUrl:RequestInfo='https://api.chucknorris.io/jokes/random';
+//
 const obtenerChiste=async():Promise<IHResponse>=>{
     try{
         const resp:Response=await fetch(jokeUrl);

@@ -1,7 +1,9 @@
 import { IHResponseData } from "../classes/interfaces/IHResponseData";
-import {IUser} from '../classes/interfaces/IUser';
+import {IResponseUser} from '../classes/interfaces/IResponseUser';
 import { error } from "../spec/module-variable.component";
+//Cloudinary
 const urlCRUD:RequestInfo='https://reqres.in/api/users';
+//
 const getUser=async(id:number):Promise<IHResponseData>=>{
     try{
         const resp:Response=await fetch(`${urlCRUD}/${id}`);
@@ -12,7 +14,7 @@ const getUser=async(id:number):Promise<IHResponseData>=>{
     }
 }
 
-const crearUsuario=async(usuario:IUser):Promise<IUser>=>{
+const crearUsuario=async(usuario:IResponseUser):Promise<IResponseUser>=>{
     try{
         const resp:Response=await fetch(urlCRUD,{
             method:'POST',
@@ -27,7 +29,7 @@ const crearUsuario=async(usuario:IUser):Promise<IUser>=>{
     }
 }
 
-const actualizarUsuario=async(id:number,usuario:IUser):Promise<IUser>=>{
+const actualizarUsuario=async(id:number,usuario:IResponseUser):Promise<IResponseUser>=>{
     try{
         const resp:Response=await fetch(`${urlCRUD}/${id}`,{
             method:'PUT',
